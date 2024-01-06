@@ -73,8 +73,6 @@ const processMessage = ({data}) => {
     ? createMessageSelfElement(content)
     : createMessageOtherElement(content, userName, userColor);
 
-    // const element = createMessageSelfElement(content);
-    //const element = createMessageOtherElement(content, userName, userColor);
 
     chat_messages.appendChild(message);
     scrollScreen();
@@ -91,7 +89,7 @@ const handleLogin = (event) => {
     chat.style.display = "flex";
 
 
-    websocket = new WebSocket("ws://localhost:8080");
+    websocket = new WebSocket("wss://backend-chat-ss58.onrender.com");
 
     websocket.onmessage = processMessage;
 
