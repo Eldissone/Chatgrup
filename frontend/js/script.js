@@ -97,7 +97,7 @@ const handleLogin = (event) => {
 
     UserConect.innerHTML = user.name;
 
-    websocket = new WebSocket("ws://backend-chat-ss58.onrender.com");
+    websocket = new WebSocket("wss://backend-chat-ss58.onrender.com");
 
     websocket.onmessage = processMessage;
 
