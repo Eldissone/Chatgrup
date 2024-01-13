@@ -197,8 +197,8 @@ img {
     line-height: 20px;
 }
 .message-self {
-    background-color: #f2f2f2;
-    color: #212121;
+    background-color: #ff6f00;
+    color: #fff;
     border-radius: 10px 10px 0 10px;
     align-self: flex-end;
 }
